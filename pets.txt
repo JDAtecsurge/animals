@@ -7,3 +7,5 @@ carmen
 apple
 coco
 choco
+Georgie
+pennywise
