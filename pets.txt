@@ -5,3 +5,5 @@ jacky
 diane
 carmen
 apple
+coco
+choco
