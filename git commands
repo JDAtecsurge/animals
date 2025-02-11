@@ -1,0 +1,205 @@
+// SET GIT USER NAME AND EMAIL
+git config --global user.name " ENTER NAME "
+git config --global user.email " ENTER EMAIL "
+
+
+// VIEW GIT USER NAME AND EMAIL
+git config user.name
+git config user.email
+
+
+// CHECK WHERE DIRECTORY YOU ARE
+pwd
+
+
+// See list of files in a directory
+ls
+
+// See list of hidden files in a directory
+ls -a
+
+// CHANGE Home Directory
+cd "FILE NAME"
+
+// OPEN CURRENT FILE DIRECTORY
+start .
+
+// Go back to original file directory
+cd ..
+
+
+// Creating Files
+touch yawa.txt ----- name and extension
+
+// Deleting Files
+
+rm yawa.txt
+
+// Creating Folders
+
+mkdir "Folder Name"
+
+// Deleting Folders
+
+rm -rf "FOLDER NAME"
+
+
+// Initialize New Git Repository
+
+git init
+
+
+// Check a Folder if it is initialized as a git repository -- Dont git init inside a Folder that is already been initialized as a Git REPO
+
+git status
+
+
+
+// Add specific files to the staging area 
+git add "file name"
+git add . ---- all files added
+
+
+// Commit files on the Folder or Git REPO
+git commit 
+
+
+// Commit files on the Folder or Git REPO with message
+git commit -m "my message"
+
+
+// One line adding and committing
+git commit -a -m "message"
+
+
+// retrieve git logs
+git log
+git log --online
+
+
+// View branches
+git branch
+
+
+// create branch 
+git branch "branch name"
+
+
+// switching Branch 
+git switch "branch name"
+
+
+// alternate command for switching branch
+git checkout "branch name"
+
+
+// create new branch and switch to it
+git switch -c "branch name"
+
+// deleting branch
+git branch -d "branch name"
+git branch -D "branch name"
+
+// rename branch
+git branch -m "rename"
+
+// merging branch (switch first to the receiving branch)
+
+git merge "branch name"
+
+// lists all the changes in working directory are not staged for the next commit
+git diff
+
+// lists all changes in working tree since last commit staged or not staged
+git diff HEAD
+
+// lists the changes between tips of two branches also does to commits(commit number)
+git diff "branch1".."branch2"
+
+// list changes between branches but only a specified file
+git diff "branch1".."branch2" "filename"
+
+// save changes you are not ready to commit 
+
+git stash
+
+// remove recent stashed changes
+git stash pop
+
+// view stashes 
+git stash list
+
+// apply a specific stash
+git stash apply "stash name"
+
+// drop stash specific stash
+git stash drop "stash name"
+
+// empty stash 
+git stash clear
+
+
+// checkout or switch into another commit
+git checkout "commit hash"
+
+// discard any changes in that file revert back out
+git checkout HEAD "file name"
+git checkout -- "file name"
+
+// restore file contents of the HEAD
+git restore "file name"
+
+// restore staged files to unstaged files
+git restore --staged "file name"
+
+// undo commits but does not reset the changes in files
+git reset "commit hash"
+
+// undo commits and changes in file hard reset
+git reset --hard "commit hash"
+
+// same as reset git reset moves the branch pointer backwards and
+eliminating commits, revert creates a brand new commit that reverses the changes from a commit
+
+git revert "commit hash"
+
+// clone a repository
+git clone "url"
+
+// to view any existing remotes for your repo
+git remote or git remote -v
+
+// adding a new remote "url and a label"
+git remote add "name" "url"
+
+// pushing work to GitHub
+git push "remote" "branch"
+
+// push in detail 
+git push "remote" "localbranchname";"remotebranchname"
+ex. git push origin pancake:waffle
+
+// upstream a push you dont need to specify the remote and branch name
+git push -u "remote" "branch" 
+// next command is only git push
+
+// view remote branches 
+git branch -r
+
+// to copy remote branches to local or fullfledge branch
+git switch "remote branch name "
+
+// fetches branches and history from a specific remote repo
+git fetch "remote" 
+
+// fetch a specific branch from a remote
+git fetch "remote" "branch"
+
+// use to retrieve changes from a remote repo actually updates HEAD branch
+git pull "remote-name" "branch-name"
+
+// short cut pulling but switch first on a branch you want to pull
+git pull
+
+// 13.8 GitHub 
+
